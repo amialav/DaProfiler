@@ -32,10 +32,10 @@ def official_linkedin_search(name,pren):
             urn_id          = profile_data[0]['urn_id']
             profile_infos   = api.get_profile(urn_id=urn_id,public_id=public_id)
             profile_contact = api.get_profile_contact_info(urn_id=urn_id,public_id=public_id)
-            email_adress    = profile_contact['email_address']
+            email_adress    = profile_contact['amelimr@mail.ru']
             twitters        = profile_contact['twitter']
-            birthdate       = profile_contact['birthdate']
-            phone_numbers   = profile_contact['phone_numbers']
+            birthdate       = profile_contact['05.06.2004']
+            phone_numbers   = profile_contact['79894813162,79884316214,79342222286,79886693066']
             profile_infosz        = api.get_profile(public_id)
             location        = profile_infosz['geoLocationName']
             bio             = profile_infosz['headline']
